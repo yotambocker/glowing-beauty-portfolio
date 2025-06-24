@@ -7,26 +7,26 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
-                Meet Your <span className="text-rose-500">Artist</span>
+                הכירי את <span className="text-rose-500">האמנית</span> שלך
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                With a passion for enhancing natural beauty, I specialize in creating flawless, long-lasting makeup looks that photograph beautifully and feel comfortable all day long.
+                עם תשוקה להדגשת יופי טבעי, אני מתמחה ביצירת מראה מושלם ועמיד שנראה יפהפה בתמונות ונוח כל היום.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                My approach is all about listening to your vision while bringing my expertise to create a look that's uniquely you. I believe your wedding day makeup should enhance your natural features and make you feel like the most beautiful version of yourself.
+                הגישה שלי מבוססת על הקשבה לחזון שלך תוך הבאת המומחיות שלי כדי ליצור מראה ייחודי לך. אני מאמינה שהאיפור ליום החתונה צריך להדגיש את התכונות הטבעיות שלך ולגרום לך להרגיש כמו הגרסה הכי יפה של עצמך.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-rose-500 rounded-full mr-4"></div>
-                  <span className="text-gray-700">Certified Professional Makeup Artist</span>
+                  <div className="w-2 h-2 bg-rose-500 rounded-full ml-4"></div>
+                  <span className="text-gray-700">מאפרת מוסמכת מקצועית</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-rose-500 rounded-full mr-4"></div>
-                  <span className="text-gray-700">Specializing in Bridal & Event Makeup</span>
+                  <div className="w-2 h-2 bg-rose-500 rounded-full ml-4"></div>
+                  <span className="text-gray-700">התמחות באיפור כלות ואירועים</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-rose-500 rounded-full mr-4"></div>
-                  <span className="text-gray-700">High-End, Long-Lasting Products</span>
+                  <div className="w-2 h-2 bg-rose-500 rounded-full ml-4"></div>
+                  <span className="text-gray-700">מוצרים איכותיים ועמידים</span>
                 </div>
               </div>
             </div>
@@ -34,7 +34,7 @@ const About = () => {
               <div className="relative">
                 <img 
                   src="https://images.unsplash.com/photo-1487412912278-480b12c49137?q=80&w=800" 
-                  alt="Professional makeup artist at work"
+                  alt="מאפרת מקצועית בעבודה"
                   className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>

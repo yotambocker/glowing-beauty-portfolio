@@ -11,12 +11,12 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-6 leading-tight">
-              Bridal <span className="text-rose-500 font-normal">Beauty</span>
+              יופי <span className="text-rose-500 font-normal">כלותי</span>
               <br />
-              <span className="text-3xl md:text-5xl text-gray-600">Artistry</span>
+              <span className="text-3xl md:text-5xl text-gray-600">ואמנות</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Creating timeless, radiant looks that celebrate your natural beauty on your most special day
+              יוצרת מראה נצחי וזוהר שחוגג את היופי הטבעי שלך ביום המיוחד ביותר שלך
             </p>
           </div>
           
@@ -25,31 +25,31 @@ const Hero = () => {
               size="lg" 
               className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Phone className="mr-2 h-5 w-5" />
-              Book Consultation
+              <Phone className="ml-2 h-5 w-5" />
+              הזמיני ייעוץ
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="border-rose-300 text-rose-600 hover:bg-rose-50 px-8 py-4 text-lg rounded-full transition-all duration-300"
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              WhatsApp
+              <MessageCircle className="ml-2 h-5 w-5" />
+              וואטסאפ
             </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6">
               <div className="text-3xl font-light text-rose-500 mb-2">100+</div>
-              <p className="text-gray-600">Beautiful Brides</p>
+              <p className="text-gray-600">כלות יפהפיות</p>
             </div>
             <div className="p-6">
               <div className="text-3xl font-light text-rose-500 mb-2">5★</div>
-              <p className="text-gray-600">Average Rating</p>
+              <p className="text-gray-600">דירוג ממוצע</p>
             </div>
             <div className="p-6">
               <div className="text-3xl font-light text-rose-500 mb-2">3+</div>
-              <p className="text-gray-600">Years Experience</p>
+              <p className="text-gray-600">שנות ניסיון</p>
             </div>
           </div>
         </div>
