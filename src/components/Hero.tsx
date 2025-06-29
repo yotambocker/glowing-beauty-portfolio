@@ -5,15 +5,15 @@ import { Phone, MessageCircle } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 flex items-center">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=1000')] bg-cover bg-center opacity-10"></div>
-      
+      <div className="absolute inset-0 bg-[url('/background.jpeg')] bg-cover bg-center opacity-10"></div>
+
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-6 leading-tight">
-              יופי <span className="text-rose-500 font-normal">כלותי</span>
+              נחמה <span className="text-rose-500 font-normal">בוקר</span>
               <br />
-              <span className="text-3xl md:text-5xl text-gray-600">ואמנות</span>
+              <span className="text-3xl md:text-5xl text-gray-600">מאפרת כלות ואירועים</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
               יוצרת מראה נצחי וזוהר שחוגג את היופי הטבעי שלך ביום המיוחד ביותר שלך

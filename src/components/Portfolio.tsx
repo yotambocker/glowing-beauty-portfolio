@@ -2,34 +2,34 @@
 const Portfolio = () => {
   const portfolioImages = [
     {
-      src: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=800",
+      src: "/portfolio1.jpeg",
       alt: "מראה איפור כלותי טבעי",
-      category: "כלות"
+      category: "אירועים"
     },
     {
-      src: "https://images.unsplash.com/photo-1487412912278-480b12c49137?q=80&w=800",
+      src: "/portfolio2.jpeg",
       alt: "איפור ערב אלגנטי",
       category: "אירועים"
     },
     {
-      src: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800",
+      src: "/portfolio3.jpeg",
       alt: "מראה כלותי רומנטי עדין",
-      category: "כלות"
+      category: "אירועים"
     },
     {
-      src: "https://images.unsplash.com/photo-1549289524-06cf8837ace5?q=80&w=800",
+      src: "/portfolio4.jpeg",
       alt: "איפור לצילום פרופיל מקצועי",
       category: "צילומים"
     },
     {
-      src: "https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=800",
+      src: "/portfolio5.jpeg",
       alt: "איפור גלמורי לאירועים",
       category: "אירועים"
     },
     {
-      src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800",
+      src: "/portfolio6.jpeg",
       alt: "יופי כלותי קלאסי",
-      category: "כלות"
+      category: "צילומים"
     }
   ];
 
@@ -68,7 +68,7 @@ const Portfolio = () => {
           <div className="text-center mt-12">
             <p className="text-gray-600 text-lg">
               רוצה לראות עוד? עקבי אחריי באינסטגרם 
-              <span className="text-rose-500 font-semibold"> @makeupby[שם]</span>
+              <a href="https://www.instagram.com/nechama.bocker" target="_blank" rel="noopener noreferrer" className="text-rose-500 font-semibold hover:underline" dir="ltr"> @nechama.bocker </a>
             </p>
           </div>
         </div>

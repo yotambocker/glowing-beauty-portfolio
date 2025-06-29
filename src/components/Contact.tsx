@@ -17,7 +17,7 @@ const Contact = () => {
               מוכנה להזמין את תור האיפור שלך? אשמח לשמוע על האירוע המיוחד שלך
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
@@ -30,42 +30,42 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">טלפון</p>
-                      <p className="text-gray-600">050-123-4567</p>
+                      <p className="text-gray-600">058-770-2670</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4 space-x-reverse">
                     <div className="bg-rose-100 p-3 rounded-full">
                       <MessageCircle className="h-6 w-6 text-rose-600" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">וואטסאפ</p>
-                      <p className="text-gray-600">050-123-4567</p>
+                      <p className="text-gray-600">058-770-2670</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4 space-x-reverse">
                     <div className="bg-rose-100 p-3 rounded-full">
                       <Mail className="h-6 w-6 text-rose-600" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">אימייל</p>
-                      <p className="text-gray-600">hello@makeupby[שם].com</p>
+                      <a href="mailto:nehamaabbou@gmail.com" className="text-gray-600 hover:underline">nehama@makeup.com</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4 space-x-reverse">
                     <div className="bg-rose-100 p-3 rounded-full">
                       <Instagram className="h-6 w-6 text-rose-600" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">אינסטגרם</p>
-                      <p className="text-gray-600">@makeupby[שם]</p>
+                      <a href="https://www.instagram.com/nechama.bocker" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:underline" dir="ltr"> @nechama.bocker </a>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-rose-50 rounded-2xl p-6">
                 <div className="flex items-center space-x-3 space-x-reverse mb-4">
                   <Clock className="h-6 w-6 text-rose-600" />
@@ -87,7 +87,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Contact Form */}
             <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">שליחת הודעה</h3>
@@ -97,8 +97,8 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       שם פרטי
                     </label>
-                    <Input 
-                      type="text" 
+                    <Input
+                      type="text"
                       placeholder="השם הפרטי שלך"
                       className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400"
                     />
@@ -107,58 +107,58 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       שם משפחה
                     </label>
-                    <Input 
-                      type="text" 
+                    <Input
+                      type="text"
                       placeholder="שם המשפחה שלך"
                       className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400"
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     אימייל
                   </label>
-                  <Input 
-                    type="email" 
+                  <Input
+                    type="email"
                     placeholder="your.email@example.com"
                     className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     טלפון
                   </label>
-                  <Input 
-                    type="tel" 
-                    placeholder="050-123-4567"
+                  <Input
+                    type="tel"
+                    placeholder="058-770-2670"
                     className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     תאריך האירוע
                   </label>
-                  <Input 
+                  <Input
                     type="date"
                     className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    ספרי לי על האירוع שלך
+                    ספרי לי על האירוע שלך
                   </label>
-                  <Textarea 
+                  <Textarea
                     placeholder="אשמח לשמוע על היום המיוחד שלך, הסגנון שאת מחפשת ובקשות ספציפיות..."
                     className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400 min-h-[120px]"
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
+
+                <Button
+                  type="submit"
                   className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   שליחת הודעה
@@ -166,10 +166,10 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          
+
           <div className="text-center mt-16 pt-8 border-t border-rose-100">
             <p className="text-gray-600">
-              © 2024 [שם המאפרת]. כל הזכויות שמורות. | 
+              © 2024 [שם המאפרת]. כל הזכויות שמורות. |
               <span className="text-rose-500"> יוצרת רגעים יפים, פנים אחד בכל פעם.</span>
             </p>
           </div>

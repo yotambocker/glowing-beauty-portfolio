@@ -8,21 +8,21 @@ const Testimonials = () => {
       role: "כלה לאחרונה",
       content: "היא גרמה לי להרגיש מדהימה ביום החתונה שלי! האיפור החזיק כל היום ונראה מושלם בכל תמונה. לא יכולתי לבקש שירות טוב יותר.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616c93e2e95?q=80&w=150"
+      image: "/portfolio1.jpeg"
     },
     {
       name: "רחל לוי",
       role: "לקוחת אירועים",
       content: "מקצועית, מוכשרת וכל כך קל לעבוד איתה. היא הבינה בדיוק מה רציתי ונתנה מעבר לציפיות שלי. ממליצה בחום!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150"
+      image: "/portfolio2.jpeg"
     },
     {
       name: "מירי רוזנברג",
       role: "כלה וחברות הכלה",
       content: "היא עשתה איפור לכל חברות הכלה שלי ואנחנו כולנו נראינו מדהים! היא רגועה, מאורגנת ומיומנת במיוחד. הפכה את הבוקר שלנו לנטול דאגות ויפה.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=150"
+      image: "/portfolio3.jpeg"
     }
   ];
 
@@ -42,7 +42,7 @@ const Testimonials = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="flex items-center mb-4 justify-end">
+                <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
