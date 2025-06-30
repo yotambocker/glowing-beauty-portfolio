@@ -2,6 +2,9 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 
+const whatsappUrl = import.meta.env.VITE_WHATSAPP;
+const phoneNumber = import.meta.env.VITE_PHONE;
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 flex items-center">
@@ -21,6 +24,7 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <a href={`tel:+${phoneNumber}`} target="_blank">
             <Button 
               size="lg" 
               className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
@@ -28,6 +32,8 @@ const Hero = () => {
               <Phone className="ml-2 h-5 w-5" />
               הזמיני ייעוץ
             </Button>
+          </a>
+            <a href={whatsappUrl} target="_blank">
             <Button 
               variant="outline" 
               size="lg"
@@ -36,6 +42,7 @@ const Hero = () => {
               <MessageCircle className="ml-2 h-5 w-5" />
               וואטסאפ
             </Button>
+            </a>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

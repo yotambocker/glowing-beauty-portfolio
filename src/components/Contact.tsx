@@ -8,6 +8,12 @@ import { useState } from "react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 
+const visualEmail = import.meta.env.VITE_VISUAL_EMAIL;
+const email = import.meta.env.VITE_EMAIL;
+const instagram = import.meta.env.VITE_INSTAGRAM;
+const phone = import.meta.env.VITE_PHONE;
+const formattedPhone = phone ? `05${phone.substring(4, 5)}-${phone.substring(5, 8)}-${phone.substring(8)}` : '';
+
 const Contact = () => {
   const [eventDate, setEventDate] = useState<Date>();
 
@@ -36,7 +42,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">טלפון</p>
-                      <p className="text-gray-600">058-770-2670</p>
+                      <p className="text-gray-600">{formattedPhone}</p>
                     </div>
                   </div>
 
@@ -46,7 +52,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">וואטסאפ</p>
-                      <p className="text-gray-600">058-770-2670</p>
+                      <p className="text-gray-600">{formattedPhone}</p>
                     </div>
                   </div>
 
@@ -56,7 +62,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">אימייל</p>
-                      <a href="mailto:nehamaabbou@gmail.com" className="text-gray-600 hover:underline">nehama@makeup.com</a>
+                      <a href={`mailto:${email}`} className="text-gray-600 hover:underline">{visualEmail}</a>
                     </div>
                   </div>
 
@@ -66,7 +72,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">אינסטגרם</p>
-                      <a href="https://www.instagram.com/nechama.bocker" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:underline" dir="ltr"> @nechama.bocker </a>
+                      <a href={instagram} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:underline" dir="ltr"> @nechama.bocker </a>
                     </div>
                   </div>
                 </div>
@@ -137,8 +143,9 @@ const Contact = () => {
                     טלפון
                   </label>
                   <Input
+                  dir="rtl"
                     type="tel"
-                    placeholder="058-770-2670"
+                    placeholder="המספר שלך"
                     className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400"
                   />
                 </div>

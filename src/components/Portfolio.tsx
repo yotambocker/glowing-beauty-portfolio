@@ -1,3 +1,4 @@
+const instagram = import.meta.env.VITE_INSTAGRAM;
 
 const Portfolio = () => {
   const portfolioImages = [
@@ -68,7 +69,7 @@ const Portfolio = () => {
           <div className="text-center mt-12">
             <p className="text-gray-600 text-lg">
               רוצה לראות עוד? עקבי אחריי באינסטגרם 
-              <a href="https://www.instagram.com/nechama.bocker" target="_blank" rel="noopener noreferrer" className="text-rose-500 font-semibold hover:underline" dir="ltr"> @nechama.bocker </a>
+              <a href={instagram} target="_blank" rel="noopener noreferrer" className="text-rose-500 font-semibold hover:underline" dir="ltr"> @nechama.bocker </a>
             </p>
           </div>
         </div>
