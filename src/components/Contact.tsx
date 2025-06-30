@@ -158,7 +158,7 @@ const Contact = () => {
                       <Button
                         variant="outline"
                         className={cn(
-                          "w-full justify-start text-left font-normal bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400 hover:bg-white",
+                          "px-3 gap-0 w-full justify-start text-left font-normal bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400 hover:bg-white",
                           !eventDate && "text-muted-foreground"
                         )}
                       >
@@ -200,7 +200,7 @@ const Contact = () => {
 
           <div className="text-center mt-16 pt-8 border-t border-rose-100">
             <p className="text-gray-600">
-              © 2024 [שם המאפרת]. כל הזכויות שמורות. |
+              © {new Date().getFullYear()} כל הזכויות שמורות | נחמה בוקר - מאפרת מקצועית
               <span className="text-rose-500"> יוצרת רגעים יפים, פנים אחד בכל פעם.</span>
             </p>
           </div>
