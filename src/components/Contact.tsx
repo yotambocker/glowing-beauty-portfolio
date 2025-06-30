@@ -8,11 +8,10 @@ import { useState } from "react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 
-const visualEmail = import.meta.env.VITE_VISUAL_EMAIL;
-const email = import.meta.env.VITE_EMAIL;
-const instagram = import.meta.env.VITE_INSTAGRAM;
-const phone = import.meta.env.VITE_PHONE;
-const formattedPhone = phone ? `05${phone.substring(4, 5)}-${phone.substring(5, 8)}-${phone.substring(8)}` : '';
+const visualEmail = 'nehama@makeup.com';
+const email = 'nehama.abbou@gmail.com';
+const instagram = 'https://www.instagram.com/nechama.bocker/';
+const phone = '058-770-2670';
 
 const Contact = () => {
   const [eventDate, setEventDate] = useState<Date>();
@@ -42,7 +41,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">טלפון</p>
-                      <p className="text-gray-600">{formattedPhone}</p>
+                      <p className="text-gray-600">{phone}</p>
                     </div>
                   </div>
 
@@ -52,7 +51,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">וואטסאפ</p>
-                      <p className="text-gray-600">{formattedPhone}</p>
+                      <p className="text-gray-600">{phone}</p>
                     </div>
                   </div>
 

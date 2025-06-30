@@ -2,8 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 
-const whatsappUrl = import.meta.env.VITE_WHATSAPP;
-const phoneNumber = import.meta.env.VITE_PHONE;
+const phone = '972587702670';
+const whatsappUrl = `https://wa.me/${phone}?text=שלום%נחמה!%20אני%20רוצה%20לקבוע%20איפור`;
 
 const Hero = () => {
   return (
@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a href={`tel:+${phoneNumber}`} target="_blank">
+          <a href={`tel:+${phone}`} target="_blank">
             <Button 
               size="lg" 
               className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"

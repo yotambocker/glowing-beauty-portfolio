@@ -1,4 +1,4 @@
-const instagram = import.meta.env.VITE_INSTAGRAM;
+const instagram = 'https://www.instagram.com/nechama.bocker/';
 
 const Portfolio = () => {
   const portfolioImages = [
