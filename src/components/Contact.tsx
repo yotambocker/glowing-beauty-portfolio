@@ -1,10 +1,16 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, MessageCircle, Clock, Instagram } from "lucide-react";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Phone, Mail, MapPin, MessageCircle, Clock, Instagram, CalendarIcon } from "lucide-react";
+import { useState } from "react";
+import { format } from "date-fns";
+import { cn } from "@/lib/utils";
 
 const Contact = () => {
+  const [eventDate, setEventDate] = useState<Date>();
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -141,10 +147,29 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     תאריך האירוע
                   </label>
-                  <Input
-                    type="date"
-                    className="bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400"
-                  />
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button
+                        variant="outline"
+                        className={cn(
+                          "w-full justify-start text-left font-normal bg-white border-rose-200 focus:border-rose-400 focus:ring-rose-400 hover:bg-white",
+                          !eventDate && "text-muted-foreground"
+                        )}
+                      >
+                        <CalendarIcon className="ml-2 h-4 w-4" />
+                        {eventDate ? format(eventDate, "dd/MM/yyyy") : <span>בחרי תאריך</span>}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={eventDate}
+                        onSelect={setEventDate}
+                        initialFocus
+                        className="p-3 pointer-events-auto"
+                      />
+                    </PopoverContent>
+                  </Popover>
                 </div>
 
                 <div>
