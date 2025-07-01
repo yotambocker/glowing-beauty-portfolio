@@ -8,7 +8,7 @@ const whatsappUrl = `https://wa.me/${phone}?text=שלום%נחמה!%20אני%20�
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 flex items-center">
-      <div className="absolute inset-0 bg-[url('/background.jpeg')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('/glowing-beauty-portfolio/background.jpeg')] bg-cover bg-center opacity-10"></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">

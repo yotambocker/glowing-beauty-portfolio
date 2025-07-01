@@ -3,32 +3,32 @@ const instagram = 'https://www.instagram.com/nechama.bocker/';
 const Portfolio = () => {
   const portfolioImages = [
     {
-      src: "/portfolio1.jpeg",
+      src: "/glowing-beauty-portfolio//portfolio1.jpeg",
       alt: "מראה איפור כלותי טבעי",
       category: "אירועים"
     },
     {
-      src: "/portfolio2.jpeg",
+      src: "/glowing-beauty-portfolio/portfolio2.jpeg",
       alt: "איפור ערב אלגנטי",
       category: "אירועים"
     },
     {
-      src: "/portfolio3.jpeg",
+      src: "/glowing-beauty-portfolio/portfolio3.jpeg",
       alt: "מראה כלותי רומנטי עדין",
       category: "אירועים"
     },
     {
-      src: "/portfolio4.jpeg",
+      src: "/glowing-beauty-portfolio/portfolio4.jpeg",
       alt: "איפור לצילום פרופיל מקצועי",
       category: "צילומים"
     },
     {
-      src: "/portfolio5.jpeg",
+      src: "/glowing-beauty-portfolio/portfolio5.jpeg",
       alt: "איפור גלמורי לאירועים",
       category: "אירועים"
     },
     {
-      src: "/portfolio6.jpeg",
+      src: "/glowing-beauty-portfolio/portfolio6.jpeg",
       alt: "יופי כלותי קלאסי",
       category: "צילומים"
     }

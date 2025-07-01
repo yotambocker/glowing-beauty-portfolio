@@ -8,21 +8,21 @@ const Testimonials = () => {
       role: "כלה לאחרונה",
       content: "היא גרמה לי להרגיש מדהימה ביום החתונה שלי! האיפור החזיק כל היום ונראה מושלם בכל תמונה. לא יכולתי לבקש שירות טוב יותר.",
       rating: 5,
-      image: "/portfolio1.jpeg"
+      image: "/glowing-beauty-portfolio/portfolio1.jpeg"
     },
     {
       name: "רחל לוי",
       role: "לקוחת אירועים",
       content: "מקצועית, מוכשרת וכל כך קל לעבוד איתה. היא הבינה בדיוק מה רציתי ונתנה מעבר לציפיות שלי. ממליצה בחום!",
       rating: 5,
-      image: "/portfolio2.jpeg"
+      image: "/glowing-beauty-portfolio/portfolio2.jpeg"
     },
     {
       name: "מירי רוזנברג",
       role: "כלה וחברות הכלה",
       content: "היא עשתה איפור לכל חברות הכלה שלי ואנחנו כולנו נראינו מדהים! היא רגועה, מאורגנת ומיומנת במיוחד. הפכה את הבוקר שלנו לנטול דאגות ויפה.",
       rating: 5,
-      image: "/portfolio3.jpeg"
+      image: "/glowing-beauty-portfolio/portfolio3.jpeg"
     }
   ];
 

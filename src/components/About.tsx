@@ -33,7 +33,7 @@ const About = () => {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <img 
-                  src="/about1.jpg" 
+                  src="/glowing-beauty-portfolio/about1.jpg" 
                   alt="מאפרת מקצועית בעבודה"
                   className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
                 />
